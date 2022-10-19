@@ -1,0 +1,11 @@
+[GLOBAL]
+backend_packages = ["pants.backend.python"]
+
+[anonymous-telemetry]
+enabled = false
+
+[source]
+root_patterns = ["/pacifica_db/"]
+
+[python]
+interpreter_constraints = ["cpython>=3.8.*"]
