@@ -17,7 +17,7 @@ Code base:
 └── requirements.txt
 ```
 
-When running `rm -rf .pids ; pants package ::`, the following warnings are produced:
+When running `pants package :: --no-pantsd`, the following warnings are produced:
 
 ```
 07:52:13.13 [WARN] The target pacifica_db/pacifica/db/__init__.py:../../pacifica-db-src-sources imports `pacifica.cli`, but Pants cannot safely infer a dependency because more than one target owns this module, so it is ambiguous which to use: ['//:root#pacifica-cli', 'pacifica_db/pacifica/__init__.py:../pacifica-db-src-sources'].
